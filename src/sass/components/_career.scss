@@ -1,0 +1,109 @@
+.career {
+    padding: 40px 0px;
+    background-color: #212121;
+
+    #career__info_size {
+        margin-top: 45px;
+    }
+
+    &__info {
+        width: 50%;
+        text-align: center;
+
+        &_title {
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        &_time {
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        &_profession {
+            color: #13FF00;
+            font-size: 18px;
+        }
+
+        &_place {
+            color: #C1C1C1;
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        &__info {
+
+            &_title {
+                font-size: 22px;
+            }
+        }
+
+    }
+
+    @media screen and(max-width:768px) {
+        & {
+            padding: 30px 0px;
+
+            &__info {
+                width: 100%;
+
+                &_title {
+                    font-size: 20px;
+                }
+
+                &_time {
+                    margin-bottom: 0;
+                }
+
+                &_profession {
+                    margin: 10px 0px;
+                }
+            }
+
+            #career__info_title {
+                margin-top: 40px;
+            }
+
+            #career__info_size {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        & {
+            padding: 20px 0px;
+
+            #career__info_title {
+                margin-top: 20px;
+            }
+
+            #career__info_size {
+                margin-top: 12px;
+            }
+
+            &__info {
+
+                &_title {
+                    font-size: 18px;
+                }
+
+                &_time {
+                    font-size: 14px;
+                }
+
+                &_profession {
+                    font-size: 16px;
+                }
+
+                &_place {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

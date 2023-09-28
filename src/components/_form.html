@@ -1,5 +1,5 @@
 <section class="form">
-    <div class="container d-flex">
+    <div class="container d-md-flex">
         <div class="form__info">
             <span class="form__info_title">
                 <h3>CONTACT</h3>
@@ -12,8 +12,18 @@
             <a class="form__info_text" href="#"><img src="img/form/location.png" alt="location">Lviv, Drogobych</a>
             <div class="form__info_line-next"></div>
         </div>
-        <div class="form__fields">
-
+        <div class="form__container">
+            <form>
+                <div class="form__container_fields">
+                    <input type="text" id="input-name" placeholder="Name">
+                    <input type="email" id="input-email" placeholder="Email">
+                </div>
+                <input type="text" id="input-subject" placeholder="Your subject">
+                <textarea id="input-message" placeholder="Message"></textarea>
+                <button type="submit" class="form__container_img" id="form__btn">
+                    <img src="img/form/form-mail.png" alt="Button Icon">Send
+                </button>
+            </form>
         </div>
     </div>
 </section>

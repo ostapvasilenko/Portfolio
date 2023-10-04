@@ -1,5 +1,5 @@
 .career {
-    padding: 40px 0px;
+    padding-top: 40px;
     background-color: #161616;
 
     #career__info_size {
@@ -32,6 +32,18 @@
             font-size: 16px;
             margin-bottom: 0;
         }
+
+        &_img {
+            transform: rotate(-90deg);
+            width: 450px;
+            height: auto;
+            border-radius: 15px;
+            margin-top: -50px;
+
+            img {
+                object-fit: contain;
+            }
+        }
     }
 
     @media screen and(max-width:992px) {
@@ -40,13 +52,18 @@
             &_title {
                 font-size: 22px;
             }
+
+            &_img {
+                width: 300px;
+                margin-top: -20px;
+            }
         }
 
     }
 
     @media screen and(max-width:768px) {
         & {
-            padding: 30px 0px;
+            padding-top: 30px;
 
             &__info {
                 width: 100%;
@@ -76,7 +93,7 @@
 
     @media screen and(max-width:576px) {
         & {
-            padding: 20px 0px;
+            padding-top: 20px;
 
             #career__info_title {
                 margin-top: 20px;
@@ -102,6 +119,10 @@
 
                 &_place {
                     font-size: 14px;
+                }
+
+                &_img {
+                    width: 220px;
                 }
             }
         }
